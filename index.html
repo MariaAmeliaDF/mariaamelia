@@ -1,86 +1,129 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@MARIAAMELIA.DF 💚</title>
-    
-    <!-- FONTS -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Maria Amélia - Transformando Vidas com Fé e Esperança</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Background interativo com parallax -->
+    <!-- Fundo com efeito parallax -->
     <div class="parallax-bg" id="parallaxBg"></div>
-    <div class="overlay-gradient"></div>
     
-    <main class="container">
-        <!-- HERO SECTION -->
-        <section class="hero-section">
+    <!-- Container principal -->
+    <div class="container">
+        <!-- Seção Hero -->
+        <section class="hero" id="hero">
             <div class="hero-content">
-                <h1 class="main-title">@MARIAAMELIA.DF</h1>
+                <div class="hero-text">
+                    <h1 class="main-title" id="mainTitle">Maria Amélia</h1>
+                    <p class="subtitle">Transformando vidas através da fé, esperança e ação</p>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn btn-primary">Conheça Meu Trabalho</a>
+                        <a href="#message" class="btn btn-secondary">Deixe uma Mensagem</a>
+                    </div>
+                </div>
                 
                 <div class="hero-image-wrapper">
-                    <img src="./FOTO01.png" alt="Maria Amélia" class="hero-image" id="heroImage">
-                </div>
-                
-                <div class="hero-text">
-                    <p class="subtitle">Vice-Presidente do PL Mulher DF</p>
-                    <p class="subtitle">Pré-Candidata a Deputada Federal</p>
-                    <p class="description">Política, Família e Compromisso com Brasília</p>
+                    <div class="hero-image-container">
+                        <img src="FOTO01.png" alt="Maria Amélia" class="hero-image" id="heroImage">
+                        <div class="image-glow"></div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- SOCIAL SECTION -->
-        <section class="social-section">
-            <h2 class="section-title">Acompanhe</h2>
-            
+        <!-- Seção Sobre -->
+        <section class="about" id="about">
+            <div class="about-content">
+                <h2>Sobre Mim</h2>
+                <p>
+                    Sou Maria Amélia, uma mulher apaixonada por servir e transformar vidas. 
+                    Através da fé, esperança e ação concreta, trabalho para levar esperança 
+                    e oportunidades para comunidades que mais precisam.
+                </p>
+                <p>
+                    Meu compromisso é com a transformação social, a valorização da dignidade 
+                    humana e a construção de um mundo mais justo e acolhedor.
+                </p>
+            </div>
+        </section>
+
+        <!-- Seção de Redes Sociais -->
+        <section class="social-section" id="contact">
+            <h2>Conecte-se Comigo</h2>
             <div class="social-links">
-                <a href="https://www.instagram.com/mariaameliadoces/" target="_blank" class="social-link instagram-link">
-                    <span class="emoji">📸</span>
-                    <span class="text">Instagram</span>
+                <a href="https://instagram.com" class="social-link instagram-link" target="_blank">
+                    <span class="social-icon">📸</span>
+                    <span class="social-name">Instagram</span>
                 </a>
-                
-                <a href="https://www.linkedin.com/in/mariaamelia/" target="_blank" class="social-link linkedin-link">
-                    <span class="emoji">💼</span>
-                    <span class="text">LinkedIn</span>
+                <a href="https://linkedin.com" class="social-link linkedin-link" target="_blank">
+                    <span class="social-icon">💼</span>
+                    <span class="social-name">LinkedIn</span>
                 </a>
-                
-                <a href="mailto:mariaameliacomunicacao@gmail.com" class="social-link contact-link">
-                    <span class="emoji">📩</span>
-                    <span class="text">Contato</span>
+                <a href="mailto:contato@mariaamelia.com" class="social-link email-link">
+                    <span class="social-icon">📩</span>
+                    <span class="social-name">Contato</span>
                 </a>
             </div>
         </section>
 
-        <!-- MESSAGE SECTION -->
-        <section class="message-section">
-            <h2 class="section-title">
-                Deixe sua Mensagem
-                <span class="heart-accent">💚</span>
-            </h2>
-            <p class="message-description">Pergunta, reclamação ou sugestão? Envie de forma anônima.</p>
-            
-            <form class="message-form">
-                <input type="email" placeholder="Seu e-mail (opcional)" class="form-input">
-                <textarea placeholder="Sua mensagem..." required class="form-textarea"></textarea>
-                <button type="submit" class="form-button">Enviar Mensagem</button>
-            </form>
-        </section>
-
-        <!-- FOOTER -->
-        <footer class="footer">
-            <div class="logo-footer">
-                <img src="./MARIAAMELIA(branco).webp" alt="Logo Maria Amélia" class="footer-logo">
+        <!-- Seção de Mensagem -->
+        <section class="message-section" id="message">
+            <div class="message-container">
+                <h2 class="message-title">Deixe sua Mensagem <span class="heart">💚</span></h2>
+                <form class="message-form" id="messageForm">
+                    <div class="form-group">
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            placeholder="Seu Nome" 
+                            required
+                            class="form-input"
+                        >
+                    </div>
+                    <div class="form-group">
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="Seu Email" 
+                            required
+                            class="form-input"
+                        >
+                    </div>
+                    <div class="form-group">
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            placeholder="Sua Mensagem..." 
+                            rows="5"
+                            required
+                            class="form-textarea"
+                        ></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">Enviar Mensagem</button>
+                </form>
+                <div id="successMessage" class="success-message" style="display: none;">
+                    ✓ Mensagem enviada com sucesso! Obrigada por entrar em contato.
+                </div>
             </div>
-            <p class="footer-text">© 2026 Maria Amélia Campos</p>
-            <p class="footer-text">Brasília, DF</p>
-        </footer>
-    </main>
+        </section>
+    </div>
 
-    <script src="./assets/js/main.js"></script>
+    <!-- Rodapé com Logo -->
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="LOGO.png" alt="Logo Maria Amélia" class="footer-logo" id="footerLogo">
+            <p class="footer-text">© 2024 Maria Amélia. Todos os direitos reservados.</p>
+            <p class="footer-tagline">Transformando vidas com fé e esperança</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
