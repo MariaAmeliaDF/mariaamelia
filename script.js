@@ -25,20 +25,15 @@ document.addEventListener("DOMContentLoaded", () => {
             button.innerText = "Enviar";
             button.disabled = false;
 
-        }, 1000);
+        }, 1200);
     });
 
     button.addEventListener("mouseenter", () => {
-        button.style.transform = "scale(1.05)";
+        button.style.transform = "scale(1.04)";
     });
 
     button.addEventListener("mouseleave", () => {
         button.style.transform = "scale(1)";
-    });
-
-    textarea.addEventListener("input", () => {
-        textarea.style.height = "120px";
-        textarea.style.height = textarea.scrollHeight + "px";
     });
 
 });
