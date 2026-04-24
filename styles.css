@@ -1,66 +1,71 @@
-body{
+*{
     margin:0;
-    font-family:'Poppins',sans-serif;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:#f5f5f5;
 }
 
 .hero{
+    position:relative;
     min-height:100vh;
-    background:url('fe-brasil.jpeg') center center/cover no-repeat;
     display:flex;
     justify-content:center;
     align-items:center;
-    position:relative;
-    padding:30px 20px;
+    padding:20px;
+    background:url('FUNDO.jpg') center center/cover no-repeat;
 }
 
 .overlay{
     position:absolute;
     inset:0;
-    background:rgba(0,0,0,0.65);
+    background:rgba(255,255,255,0.55);
 }
 
 .content{
     position:relative;
     z-index:2;
     width:100%;
-    max-width:420px;
+    max-width:430px;
     text-align:center;
 }
 
-/* FOTO PREENCHENDO TOTALMENTE */
+/* FOTO */
 .foto-container{
-    width: 320px;
-    height: 320px;
-    overflow: hidden;
-    border-radius: 12px;
+    margin-bottom:18px;
 }
 
 .foto{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 70% center;
-    display: block;
+    width:155px;
+    height:155px;
+    object-fit:cover;
+    border-radius:50%;
+    border:4px solid #ffffff;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
 }
 
-
-/* LOGO CENTRALIZADO */
-.logo{
-    width:320px;
-    max-width:95%;
-    height:auto;
-    display:block;
-    margin:0 auto 18px auto;
-    object-fit:contain;
+/* NOME NO LUGAR DO LOGO */
+.nome{
+    font-family:'Montserrat','Raleway',sans-serif;
+    font-weight:300;
+    font-size:22px;
+    text-transform:uppercase;
+    letter-spacing:8px;
+    color:#050505;
+    margin-bottom:20px;
+    line-height:1.5;
 }
 
 /* TEXTO */
 .frase{
-    color:#fff;
-    font-size:18px;
+    font-size:15px;
+    color:#222;
     line-height:1.6;
-    font-weight:500;
-    margin-bottom:25px;
+    margin-bottom:22px;
+    padding:0 10px;
 }
 
 /* LINKS */
@@ -71,15 +76,41 @@ body{
 }
 
 .links a{
-    background:#fff;
-    color:#222;
-    padding:16px;
-    border-radius:14px;
     text-decoration:none;
-    font-weight:600;
-    transition:.3s;
+    background:#111;
+    color:#fff;
+    padding:14px 18px;
+    border-radius:14px;
+    font-size:15px;
+    font-weight:500;
+    transition:0.3s;
 }
 
 .links a:hover{
-    transform:scale(1.03);
+    transform:translateY(-2px);
+    background:#000;
+}
+
+/* CELULAR PEQUENO */
+@media(max-height:700px){
+    .foto{
+        width:130px;
+        height:130px;
+    }
+
+    .nome{
+        font-size:18px;
+        letter-spacing:6px;
+        margin-bottom:14px;
+    }
+
+    .frase{
+        font-size:14px;
+        margin-bottom:16px;
+    }
+
+    .links a{
+        padding:12px;
+        font-size:14px;
+    }
 }
