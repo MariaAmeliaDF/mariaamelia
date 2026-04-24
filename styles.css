@@ -44,8 +44,10 @@ body{
 .logo{
     width:320px;
     max-width:95%;
+    height:auto;
     display:block;
     margin:0 auto 18px auto;
+    object-fit:contain;
 }
 
 /* TEXTO */
