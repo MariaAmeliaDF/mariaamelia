@@ -3,153 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Maria Amélia</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:'Poppins',sans-serif;
-}
-
-.hero{
-    min-height:100vh;
-    background:url('fe-brasil.jpeg') center/cover no-repeat;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:30px 15px;
-    position:relative;
-}
-
-.overlay{
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,0.45);
-}
-
-.content{
-    position:relative;
-    z-index:2;
-    width:100%;
-    max-width:430px;
-    text-align:center;
-    color:white;
-}
-
-/* FOTO */
-.foto-container{
-    width:230px;
-    height:230px;
-    margin:0 auto 20px;
-    border-radius:18px;
-    overflow:hidden;
-    border:4px solid white;
-    box-shadow:0 0 25px rgba(255,255,255,0.25);
-}
-
-.foto-container img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    display:block;
-}
-
-/* NOME */
-.nome{
-    font-size:38px;
-    font-weight:700;
-    margin-bottom:18px;
-    letter-spacing:2px;
-}
-
-/* BARRAS */
-.tag{
-    width:100%;
-    padding:12px;
-    border-radius:14px;
-    margin-bottom:12px;
-    font-weight:600;
-    font-size:16px;
-}
-
-.politica{
-    background:#009739;
-    color:white;
-}
-
-.mulher{
-    background:#ffd6e7;
-    color:#d10072;
-}
-
-/* TEXTO */
-.frase{
-    font-size:18px;
-    line-height:1.7;
-    margin:20px 0;
-}
-
-/* LINKS */
-.links a{
-    display:block;
-    text-decoration:none;
-    background:white;
-    color:#111;
-    padding:14px;
-    border-radius:14px;
-    margin-bottom:12px;
-    font-weight:600;
-    transition:0.3s;
-}
-
-.links a:hover{
-    transform:scale(1.03);
-}
-
-/* FORMULÁRIO */
-.form-opiniao{
-    margin-top:20px;
-}
-
-.form-opiniao textarea{
-    width:100%;
-    height:160px;
-    border:none;
-    outline:none;
-    resize:none;
-    padding:20px;
-    font-size:16px;
-    font-family:'Poppins',sans-serif;
-    border-radius:18px;
-    background:url('Quadri opnião.png') center/cover no-repeat;
-    color:#222;
-}
-
-.form-opiniao textarea::placeholder{
-    color:#555;
-}
-
-.form-opiniao button{
-    width:100%;
-    margin-top:12px;
-    padding:14px;
-    border:none;
-    border-radius:14px;
-    background:#009739;
-    color:white;
-    font-size:16px;
-    font-weight:600;
-    cursor:pointer;
-}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -160,51 +18,51 @@ body{
 
 <div class="content">
 
-<!-- FOTO -->
-<div class="foto-container">
-<img src="FOTOCAPA.PNG" alt="Maria Amélia">
-</div>
+    <!-- FOTO -->
+    <div class="foto-container">
+        <img src="FOTOCAPA.PNG" alt="Maria Amélia" class="foto">
+    </div>
 
-<!-- NOME -->
-<h1 class="nome">MARIA AMÉLIA</h1>
+    <!-- NOME -->
+    <h1 class="nome">MARIA AMÉLIA</h1>
 
-<!-- BARRAS -->
-<div class="tag politica">🇧🇷 POLÍTICA</div>
-<div class="tag mulher">💗 PL Mulher7</div>
+    <!-- BARRAS -->
+    <div class="tag">🇧🇷 POLÍTICA</div>
 
-<!-- TEXTO -->
-<p class="frase">
-🏛️ Vice-presidente do PL Mulher DF <br>
-Pré-candidata a Deputada Federal <br>
-Política, família e compromisso com Brasília 💚
-</p>
+    <div class="tag">💗 PL Mulher7</div>
 
-<!-- LINKS -->
-<div class="links">
+    <!-- TEXTO -->
+    <p class="frase">
+        🏛️ Vice-presidente do PL Mulher DF <br>
+        Pré-candidata a Deputada Federal <br>
+        Política, família e compromisso com Brasília 💚
+    </p>
 
-<a href="https://wa.me/5561999999999" target="_blank">
-💬 WhatsApp
-</a>
+    <!-- LINKS -->
+    <div class="links">
 
-<a href="https://instagram.com/mariaamelia.df" target="_blank">
-📸 Instagram
-</a>
+        <a href="https://wa.me/5561999999999" target="_blank">
+            💬 WhatsApp
+        </a>
 
-<a href="https://instagram.com/mariaameliadoces" target="_blank">
-🍰 Empresária
-</a>
+        <a href="https://instagram.com/mariaamelia.df" target="_blank">
+            📸 Instagram
+        </a>
 
-<a href="mailto:contato@mariaamelia.com">
-📩 Email
-</a>
+        <a href="https://instagram.com/mariaameliadoces" target="_blank">
+            🍰 Empresária
+        </a>
 
-</div>
+        <a href="mailto:contato@mariaamelia.com">
+            📩 Email
+        </a>
 
-<!-- FORMULÁRIO -->
-<form class="form-opiniao">
-<textarea placeholder="Deixe sua opinião..."></textarea>
-<button type="submit">Enviar</button>
-</form>
+    </div>
+
+    <!-- OPINIÃO -->
+    <form class="form-opiniao">
+        <textarea placeholder="💚 Quero ouvir você"></textarea>
+    </form>
 
 </div>
 </section>
