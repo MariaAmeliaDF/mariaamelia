@@ -70,6 +70,17 @@ body{
     margin:20px auto 28px auto;
 }
 
+/* CELULAR */
+@media (max-width: 768px){
+
+    .logo{
+        width:320px;
+        max-width:88%;
+        margin:18px auto 24px auto;
+    }
+
+}
+
 
 
 /* TEXTO */
