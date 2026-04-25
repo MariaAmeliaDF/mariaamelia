@@ -64,11 +64,11 @@ body{
 
 /* LOGO AJUSTADO */
 .logo{
-    width:650px;
-    max-width:95%;
+    width:900px;
+    max-width:150%;
     height:auto;
     display:block;
-    margin:35px auto 20px auto;
+    margin:80px auto 50px auto;
 }
 
 /* TEXTO */
