@@ -65,7 +65,7 @@ body{
 /* LOGO AJUSTADO */
 .logo{
     width:800px;
-    max-width:100%;
+    max-width:200%;
     height:auto;
     display:block;
     margin:12px auto 30px auto;
