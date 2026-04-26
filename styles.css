@@ -104,18 +104,20 @@ body{
     transform:translateY(-2px);
 }
 
-/* X */
+/* X sozinho */
 .link-x{
-    background:#000 !important;
-    color:#fff !important;
+    background:#fff !important;
+    color:#000 !important;
+    font-size:22px !important;
+    font-weight:700 !important;
 }
 
-/* FORMULÁRIO */
+/* FORMULÁRIO NOVO */
 .opiniao{
     display:flex;
     flex-direction:column;
     gap:12px;
-    margin-top:10px;
+    margin-top:18px;
 }
 
 .titulo-formulario{
@@ -129,9 +131,10 @@ body{
 .opiniao input,
 .opiniao textarea{
     width:100%;
+    background:#fff;
     border:none;
-    border-radius:18px;
-    padding:16px;
+    border-radius:14px;
+    padding:15px;
     font-size:15px;
     font-family:'Poppins', sans-serif;
     outline:none;
@@ -186,7 +189,7 @@ body{
     }
 
     .titulo-formulario{
-        font-size:19px;
+        font-size:18px;
     }
 
 }
