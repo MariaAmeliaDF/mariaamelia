@@ -115,6 +115,13 @@ body{
     letter-spacing:1px;
 }
 
+/* FACEBOOK AZUL */
+.link-facebook{
+    background:#1877F2 !important;
+    color:#fff !important;
+    font-weight:700 !important;
+}
+
 /* FORMULÁRIO */
 .opiniao{
     display:flex;
