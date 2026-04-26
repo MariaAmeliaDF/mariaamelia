@@ -1,91 +1,116 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maria Amélia</title>
 
-<title>Maria Amélia</title>
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f5f7fa;
+      display: flex;
+      justify-content: center;
+    }
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    .container {
+      width: 100%;
+      max-width: 420px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .titulo {
+      font-size: 24px;
+      font-weight: 700;
+      color: #1E3A8A;
+      margin-bottom: 10px;
+    }
+
+    .subtitulo {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 25px;
+    }
+
+    .botao {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+      width: 100%;
+      padding: 14px 18px;
+      margin: 10px 0;
+
+      background: linear-gradient(135deg, #1E3A8A, #3B82F6);
+      color: #ffffff;
+
+      font-size: 16px;
+      font-weight: 600;
+
+      border-radius: 12px;
+      text-decoration: none;
+
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+      transition: all 0.3s ease;
+    }
+
+    .botao:hover {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    .icone {
+      font-size: 20px;
+    }
+
+    .rodape {
+      margin-top: 25px;
+      font-size: 12px;
+      color: #888;
+    }
+  </style>
 </head>
 
 <body>
 
-<section class="hero">
+  <div class="container">
 
-    <!-- VÍDEO FUNDO -->
-    <video autoplay muted loop playsinline class="video-bg">
-        <source src="FUNDO.mp4" type="video/mp4">
-    </video>
+    <div class="titulo">Maria Amélia</div>
+    <div class="subtitulo">Acompanhe e participe da nossa campanha</div>
 
-    <div class="overlay"></div>
+    <!-- BOTÃO PRINCIPAL -->
+    <a href="https://maria-amelia.xyz/cadastro/8BFA5A71" class="botao" target="_blank">
+      <span class="icone">📲</span>
+      <span>Fique por dentro da nossa campanha</span>
+    </a>
 
-    <div class="container">
+    <!-- EXEMPLOS DE OUTROS BOTÕES (se quiser usar depois) -->
 
-        <!-- FOTO -->
-        <div class="foto-box">
-            <img src="FOTOCAPA.jpg" alt="Maria Amélia" class="foto">
-        </div>
+    <!--
+    <a href="#" class="botao">
+      <span class="icone">📷</span>
+      <span>Instagram</span>
+    </a>
 
-        <!-- LOGO -->
-        <img src="LOGO.png" alt="Maria Amélia" class="logo">
+    <a href="#" class="botao">
+      <span class="icone">💬</span>
+      <span>Fale no WhatsApp</span>
+    </a>
+    -->
 
-        <!-- TEXTO -->
-        <p class="bio">
-            🏛️ Vice-presidente do PL Mulher DF <br>
-            Pré-candidata a Deputada Federal <br>
-            Política, família e compromisso com Brasília 💚
-        </p>
-
-        <!-- LINKS -->
-        <div class="links">
-
-            <a href="https://instagram.com/mariaamelia.df" target="_blank" rel="noopener noreferrer" class="link-instagram">
-                📸 Instagram
-            </a>
-
-            <a href="https://wa.me/5561920033480" target="_blank" rel="noopener noreferrer" class="link-whatsapp">
-                💬 WhatsApp
-            </a>
-
-            <a href="https://x.com/mariaameliadf" target="_blank" rel="noopener noreferrer" class="link-x">
-                X
-            </a>
-
-            <a href="https://www.facebook.com/mariaamelia.df.oficial/" target="_blank" rel="noopener noreferrer" class="link-facebook">
-                ⓕ Facebook
-            </a>
-
-            <a href="https://www.metropoles.com/brasil/confeiteira-de-michelle-confirma-pre-candidatura-a-deputada-federal" target="_blank" rel="noopener noreferrer">
-                🇧🇷 Ver matéria
-            </a>
-
-        </div>
-
-        <!-- FORMULÁRIO -->
-        <form class="opiniao">
-
-            <h2 class="titulo-formulario">
-                💚 Junte-se comigo, quero te ouvir
-            </h2>
-
-            <input type="text" name="nome" placeholder="Seu nome" required>
-
-            <input type="tel" name="telefone" placeholder="Seu telefone">
-
-            <input type="email" name="email" placeholder="Seu e-mail" required>
-
-            <textarea name="mensagem" placeholder="Escreva sua mensagem..." required></textarea>
-
-            <button type="submit">💚 Enviar mensagem</button>
-
-        </form>
-
+    <div class="rodape">
+      © 2026 - Todos os direitos reservados
     </div>
 
-</section>
+  </div>
 
 </body>
 </html>
