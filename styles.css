@@ -1,3 +1,4 @@
+/* LINKS */
 .links{
     display:flex;
     flex-direction:column;
@@ -13,7 +14,7 @@
     background:#fff;
     color:#111;
     text-decoration:none;
-    padding:15px 18px;
+    padding:15px 50px 15px 18px;
     border-radius:14px;
     font-size:16px;
     font-weight:600;
@@ -25,30 +26,26 @@
     text-align:center;
 }
 
-/* ÍCONE NO CANTO ESQUERDO */
-.icon-left{
+/* ICONES PNG DIREITA */
+.icone-img{
     position:absolute;
-    left:14px;
+    right:14px;
+    top:50%;
+    transform:translateY(-50%);
+    width:24px;
+    height:24px;
+    object-fit:contain;
+}
+
+/* WHATSAPP */
+.icone-fa{
+    position:absolute;
+    right:14px;
     top:50%;
     transform:translateY(-50%);
     font-size:24px;
-    width:24px;
-    text-align:center;
-}
-
-/* CORES REAIS */
-.instagram{
-    color:#E4405F !important;
 }
 
 .whatsapp{
-    color:#25D366 !important;
-}
-
-.facebook{
-    color:#1877F2 !important;
-}
-
-.xreal{
-    color:#000 !important;
+    color:#25D366;
 }
